@@ -7,6 +7,7 @@
 	<script src="http://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue"></script>
 	<style>
 		.list{
 			width: 100%;
@@ -35,7 +36,19 @@
 		</ul>
 	</header>
 	<section>
-		
+		<div>
+			<div id="app">
+  				{{ message }}
+			</div>
+		</div>
 	</section>
 </body>
+<script>
+	var app = new obj({
+		el:'#app',
+		data:{
+		message:'Hello Vue!'	
+		}
+	});
+</script>
 </html>
